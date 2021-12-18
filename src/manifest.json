@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Forklift for Autotask",
+    "version": "0.1.0",
+    "description": "Autotask fixes and improvements.",
+    "icons": {},
+    "content_scripts": [
+        {
+            "matches": ["https://*.autotask.net/Mvc/Framework/Authentication.mvc/Authenticate"],
+            "js": ["login.js"]
+        },
+        {
+            "matches": ["https://*.autotask.net/Mvc/Contracts/InvoiceViewer.mvc/InvoicePreviewViewer*"],
+            "js": ["invoice-preview.js"]
+        },
+        {
+            "matches": ["https://*.autotask.net/Mvc/ServiceDesk/TicketDetail.mvc*"],
+            "js": ["ticket-detail.js"]
+        }
+    ]
+}
