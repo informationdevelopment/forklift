@@ -1,4 +1,4 @@
-const urlPattern = /https?:\/\/\S+/g;
+const urlPattern = /https?:\/\/\S+[^\s\.;?!]/g;
 
 window.addEventListener("pageshow", function() {
     const checklistItems = this.document.querySelectorAll(".ChecklistItem .Title");

@@ -1,4 +1,4 @@
 window.addEventListener("pageshow", function() {
-    const previewWatermark = document.querySelector("iframe").contentDocument.querySelector('div');
+    const previewWatermark = document.querySelector('div');
     previewWatermark.style.zIndex = -1;
 });
