@@ -27,6 +27,7 @@ function wrapMatches(text, pattern, wrapFunc) {
 function wrapUrls(url) {
     const link = document.createElement('a');
     link.href = url;
+    link.target = "_blank";
     link.appendChild(document.createTextNode(url));
     return link;
 }

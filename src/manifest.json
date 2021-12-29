@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Forklift for Autotask",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Autotask fixes and improvements.",
     "icons": {
         "128": "icons/128.png",
